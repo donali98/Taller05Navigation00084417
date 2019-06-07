@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/destination_home"
+        android:icon="@drawable/home_custom_icon_asset"
+        android:title="Home" />
+    <item
+        android:id="@+id/destination_second"
+        android:icon="@drawable/home_custom_icon_asset"
+        android:title="Second" />
+    <item
+        android:id="@+id/destination_third"
+        android:icon="@drawable/home_custom_icon_asset"
+        android:title="Third" />
+    <item
+        android:id="@+id/destination_fourth"
+        android:icon="@drawable/home_custom_icon_asset"
+        android:title="Fourth" />
+
+</menu>

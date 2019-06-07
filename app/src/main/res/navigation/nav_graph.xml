@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/destination_home">
+
+    <fragment
+        android:id="@+id/destination_home"
+        android:name="com.donali.tallernavigation00084417.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action android:id="@+id/next_action"
+                app:destination="@id/destination_second"/>
+    </fragment>
+    <fragment android:id="@+id/destination_second" android:name="com.donali.tallernavigation00084417.SecondFragment"
+              android:label="fragment_second" tools:layout="@layout/fragment_second">
+        <action android:id="@+id/next_action"
+                app:destination="@id/destination_third"/>
+    </fragment>
+    <fragment android:id="@+id/destination_third" android:name="com.donali.tallernavigation00084417.ThirdFragment"
+              android:label="fragment_third" tools:layout="@layout/fragment_third">
+        <action android:id="@+id/next_action"
+                app:destination="@id/destination_fourth"/>
+        <action android:id="@+id/pop_action" app:destination="@id/destination_home"
+                app:popUpTo="@+id/destination_home"/>
+    </fragment>
+    <fragment android:id="@+id/destination_fourth" android:name="com.donali.tallernavigation00084417.FourthFragment"
+              android:label="fragment_fourth" tools:layout="@layout/fragment_fourth"/>
+</navigation>
